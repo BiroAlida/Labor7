@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "570111802101",
+    "firebase_url": "https://labor7-d59f2.firebaseio.com",
+    "project_id": "labor7-d59f2",
+    "storage_bucket": "labor7-d59f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570111802101:android:d1b8a622b4d593b00de3bc",
+        "android_client_info": {
+          "package_name": "com.example.labor7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570111802101-i6aav7fm307ue8n3a0i9s0t3gdddi5mm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.labor7",
+            "certificate_hash": "8bddc492434897a7600eb6adfd8791f14375be2a"
+          }
+        },
+        {
+          "client_id": "570111802101-2n2lfr3lot04b40ooa6s3cmr9birjq3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkBoZnHE_6CRg5zsAD7IFKkNOAbrTEsew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570111802101-2n2lfr3lot04b40ooa6s3cmr9birjq3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
