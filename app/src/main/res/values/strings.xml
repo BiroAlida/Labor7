@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Labor7</string>
+    <string-array name="Location">
+        <item>Marosvasarhely</item>
+        <item>Csikszereda</item>
+        <item>Kolozsvar</item>
+    </string-array>
+
+    <string-array name="Department">
+        <item>Informatics</item>
+        <item>Computer Science</item>
+        <item>Translation</item>
+        <item>Communication</item>
+    </string-array>
 </resources>

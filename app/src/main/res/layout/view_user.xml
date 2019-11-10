@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persons"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewNev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewHelyseg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNev"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageViewPic"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/textViewHelyseg"
+        android:layout_marginTop="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewPic"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewNem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDatum"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewHobbi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNem"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewSzak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHobbi"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewHanyadEves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSzak"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewMegjegyzese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSzak"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+</RelativeLayout>

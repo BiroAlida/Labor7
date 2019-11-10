@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Form"
         android:layout_alignParentTop="true"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:layout_marginTop="0dp"
         />
 
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Name" />
@@ -54,123 +54,128 @@
         android:text="Date Picker"
         android:layout_centerHorizontal="true"/>
 
-    <RadioButton
-        android:id="@+id/radioButtonMale"
+    <RadioGroup
+
+        android:id="@+id/radioGrp"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBoxDance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="10dp"
-        android:text="Male" />
+        android:text="Dance" />
 
-    <RadioButton
-        android:id="@+id/radioButtonFemale"
+    <CheckBox
+        android:id="@+id/checkBoxSwim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:text="Female"
-        android:layout_centerHorizontal="true"/>
+        android:layout_toEndOf="@+id/checkBoxDance"
+        android:layout_toRightOf="@+id/checkBoxDance"
+        android:text="Swim" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxDraw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/radioButtonMale"
+        android:layout_below="@+id/button"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="10dp"
-        android:text="Dancing" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/radioButtonFemale"
-        android:layout_marginTop="10dp"
-        android:text="Swimming"
-        android:layout_centerHorizontal="true"/>
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/radioButtonFemale"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/checkBox2"
-        android:layout_toRightOf="@+id/checkBox2"
-        android:text="Drawing" />
+        android:layout_toEndOf="@+id/checkBoxSwim"
+        android:layout_toRightOf="@+id/checkBoxSwim"
+        android:text="Draw" />
 
     <Spinner
         android:id="@+id/spinnerDepartment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox2"
-        android:layout_marginTop="20dp" />
+        android:layout_below="@+id/checkBoxDance"
+        android:layout_marginTop="18dp" />
 
     <TextView
-        android:id="@+id/textViewYearOfStudy"
+        android:id="@+id/textViewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spinnerDepartment"
-        android:layout_marginTop="12dp"
-        android:text="Year Of Study" />
-
-    <RadioButton
-    android:id="@+id/radioButtonI"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/spinnerDepartment"
-    android:layout_marginStart="10dp"
-    android:layout_marginLeft="-85dp"
-    android:layout_marginTop="10dp"
-    android:layout_toEndOf="@+id/textViewYearOfStudy"
-    android:layout_toRightOf="@+id/textViewYearOfStudy"
-    android:text="I" />
-
-    <RadioButton
-        android:id="@+id/radioButtonII"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinnerDepartment"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
         android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/radioButtonI"
-        android:layout_toRightOf="@+id/radioButtonI"
-        android:text="II" />
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:text="Picked Date" />
 
-    <RadioButton
-        android:id="@+id/radioButtonIII"
-        android:layout_width="wrap_content"
+    <RadioGroup
+
+        android:id="@+id/radioGrpYear"
+        android:layout_width="143dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/spinnerDepartment"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="-181dp"
-        android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/radioButtonII"
-        android:layout_toRightOf="@+id/radioButtonII"
-        android:text="III" />
+        android:layout_marginTop="10dp">
 
-    <RadioButton
-        android:id="@+id/radioButtonIV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinnerDepartment"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="-233dp"
-        android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/radioButtonIII"
-        android:layout_toRightOf="@+id/radioButtonIII"
-        android:text="IV" />
+        <RadioButton
+            android:id="@+id/radioButtonI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I" />
+        <RadioButton
+            android:id="@+id/radioButtonII"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="II" />
+
+        <RadioButton
+            android:id="@+id/radioButtonIII"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="III" />
+        <RadioButton
+            android:id="@+id/radioButtonIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IV" />
+
+    </RadioGroup>
 
     <EditText
         android:id="@+id/editTextExpectations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/radioButtonII"
-        android:layout_marginTop="20dp"
+        android:layout_below="@+id/radioGrpYear"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Expectations" />
 
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextExpectations"
+        android:layout_marginTop="2dp"
+        android:text="Send" />
 
 </RelativeLayout>
